@@ -4,6 +4,8 @@ Final audit before any public-facing asset ships. Source: treatise §5 The Shipp
 
 Use with `ai/agents/brand-friction.md` for assisted review.
 
+**Prose / text-only ships:** use [`shipping-ledger-prose.md`](shipping-ledger-prose.md) when `project_type` is `story` or text-only `game`.
+
 ## Five checks
 
 ### 1. Vocabulary Check

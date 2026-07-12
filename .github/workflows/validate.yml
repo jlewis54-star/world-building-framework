@@ -33,4 +33,4 @@ jobs:
       - name: Install ripgrep
         run: sudo apt-get update && sudo apt-get install -y ripgrep
       - name: Run markdown validation
-        run: ./scripts/validate.sh
+        run: make validate

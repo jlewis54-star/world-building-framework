@@ -50,6 +50,9 @@ def main() -> int:
                 errors.append(f"{rel_source}: link escapes repo: {target}")
                 continue
             if not resolved.exists():
+                if target.endswith("/"):
+                    if (resolved / "README.md").is_file() or (resolved / "PROJECT.md").is_file():
+                        continue
                 rel_source = source.relative_to(ROOT)
                 errors.append(f"{rel_source}: broken link: {target}")
     if errors:

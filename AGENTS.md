@@ -30,7 +30,7 @@ Studio bible register for `world/`, `templates/`, `playbook/`, `projects/`, `ai/
 | --- | --- |
 | Start here | `GETTING_STARTED.md` |
 | Writing | `WRITING.md` |
-| Process | `playbook/` |
+| Process | `playbook/` (tracks: [`fiction-ttrpg-tracks.md`](playbook/fiction-ttrpg-tracks.md)) |
 | Blank forms (thick) | `templates/` |
 | Filled bible (thin) | `world/` doc triad table in [`world/README.md`](world/README.md) |
 | Shipping instances | `projects/` |

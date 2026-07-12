@@ -51,4 +51,27 @@ Core personas, aliases, narrator voices.
 | --- | --- | --- | --- |
 | _fill_ | _fill_ | _fill_ | yes/no |
 
+## Factions and Institutions (optional)
+
+Hard-dial fiction and TTRPG: name power blocs, goals, and constraints. One table row per faction.
+
+| Name | Goal | Constraint | Public? |
+| --- | --- | --- | --- |
+| _fill_ | _fill_ | _fill_ | yes/no |
+
+## Geography and Places (optional)
+
+Anchor locations tied to timeline events. Soft worlds: name regions without full maps.
+
+| Place | Role in story | Canon weight |
+| --- | --- | --- |
+| _fill_ | _fill_ | core / secondary |
+
+## Magic, Technology, or Systems (optional)
+
+Costs, limits, and failure modes. Testable rules for hard dial.
+
+1. _fill_
+2. _fill_
+
 Process: [`templates/10_foundations/12_lore_canon.md`](../../templates/10_foundations/12_lore_canon.md) · Prompt: [`ai/prompts/12_lore_canon.md`](../../ai/prompts/12_lore_canon.md)

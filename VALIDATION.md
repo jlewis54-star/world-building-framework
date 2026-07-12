@@ -17,38 +17,47 @@ Full repo:
 make validate
 ```
 
-Or:
-
-```bash
-./scripts/validate.sh
-```
-
 Changed files only (PR speed):
 
 ```bash
 make validate-changed
 ```
 
-Or:
+Canon version and project inheritance:
 
 ```bash
-./scripts/validate.sh --changed
+make validate-canon
 ```
+
+World-type status dashboard:
+
+```bash
+make world-dashboard
+```
+
+List open projects vs canon version:
+
+```bash
+make list-projects
+```
+
+Or run scripts directly from [`scripts/`](scripts/).
 
 ## Checks
 
-| Check | Scope |
-| --- | --- |
-| Em/en dashes | All scanned markdown |
-| Scaffold leak | `world/**` only (Purpose, Theory, AI Prompt, Review Checklist, APPLIES) |
-| Banned slop words | Per [`reference/voice.md`](reference/voice.md) |
-| Internal links | Relative markdown link targets must resolve inside repo |
+| Check | Command | Scope |
+| --- | --- | --- |
+| Markdown prose | `make validate` | dashes, banned words, links, scaffold leaks |
+| Projects | `make validate` | scaffold leak in `projects/*`, checklist gaps |
+| Demo-world guard | `make validate-changed` | blocks edits to `examples/demo-world/world/` unless `ALLOW_DEMO_EDIT=1` |
+| Canon drift | `make validate-canon` | governance vs frontmatter vs `inherits_canon` |
+| World-type fit | `make world-dashboard` | required / recommended / skip_ok by profile |
 
 Scanned paths: `world/`, `playbook/`, `ai/`, `templates/`, `examples/`, `projects/`, root docs. `theory/` excluded.
 
 ## CI
 
-Pull requests touching scanned paths run the same script via [`.github/workflows/validate.yml`](.github/workflows/validate.yml).
+Pull requests touching scanned paths run `make validate` via [`.github/workflows/validate.yml`](.github/workflows/validate.yml).
 
 ## Pre-commit (optional)
 

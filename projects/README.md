@@ -12,7 +12,11 @@ cp -R templates/projects/_project_scaffold "projects/YYYY-MM-slug"
 2. Write narrative hook with **citations** to `world/10_foundations/12_lore_canon.md`.
 3. Fill `asset_matrix.md`.
 4. Produce assets.
-5. Complete `shipping_checklist.md` (or run `ai/agents/brand-friction.md`).
+5. Complete `shipping_checklist.md` (full or prose ledger per `project_type`; see [`playbook/shipping-ledger-prose.md`](../playbook/shipping-ledger-prose.md)).
+
+Examples: [`examples/demo-project/`](../examples/demo-project/).
+
+Maintenance: `make list-projects` and `make validate-canon` after canon bumps.
 
 ## Project types
 

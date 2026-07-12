@@ -4,6 +4,8 @@ Guided build for small teams. Prescribed order. Skip only where marked. Checkpoi
 
 Theory background: [`theory/Creative-World-Building-Research-Framework.md`](theory/Creative-World-Building-Research-Framework.md). Process detail: [`playbook/`](playbook/).
 
+**Fiction or TTRPG?** Read [`playbook/fiction-ttrpg-tracks.md`](playbook/fiction-ttrpg-tracks.md) for playtest-first and prose-only paths.
+
 `world/` files are thin stubs (frontmatter + fill sections). Scaffolding, prompts, and checklists live under `templates/` and `ai/`.
 
 ---
@@ -14,13 +16,13 @@ Theory background: [`theory/Creative-World-Building-Research-Framework.md`](theo
 
 1. Open [`playbook/world-types.md`](playbook/world-types.md). Pick one primary type: `fiction | brand | creator_ip | ttrpg`.
 2. Set hard/soft dial (Falmouth split: exhaustive rules vs evocative gaps).
-3. Record choices in `world/00_governance/01_governance_ledger.md` under World Profile.
+3. Record choices in `world/00_governance/01_governance_ledger.md` under World Profile and Skip Registry (if any docs deferred).
 
 **Checkpoint**
 
 - [ ] World type named
 - [ ] Hard/soft stance named in one sentence
-- [ ] Named owners for manifesto and lore (even if same person)
+- [ ] Named owners for manifesto and lore (same person OK for solo work)
 
 ---
 
@@ -48,20 +50,24 @@ Theory background: [`theory/Creative-World-Building-Research-Framework.md`](theo
 **Do**
 
 1. Fill `world/20_identity/21_verbal_lexicon.md`: voice matrix, dictionary, bans, copy examples.
-2. Fill `world/20_identity/22_visual_core.md`: type, color, grid, marks (+ Figma link if used).
-3. Fill `world/20_identity/23_asset_behavior.md`: camera, motion, texture.
-4. Optional: `world/30_sensory/31_sonic_dna.md`. Mark skipped in the skip declaration (and frontmatter `status: skipped`) if silent/print-first.
+2. Fill `world/20_identity/22_visual_core.md`: type, color, grid, marks (+ Figma link if used). Fiction/TTRPG: see [`playbook/fiction-prose-fill.md`](playbook/fiction-prose-fill.md).
+3. Fill `world/20_identity/23_asset_behavior.md`: camera, motion, texture (or skip with reason).
+4. Optional: `world/30_sensory/31_sonic_dna.md`. Mark skipped in Skip Registry + frontmatter `status: skipped` if silent/print-first.
 
 **Checkpoint**
 
-- [ ] Voice matrix complete (three poles + “what it is not”)
-- [ ] Palette locked with hex/Pantone or material equivalents
-- [ ] One silhouette / shape-language rule
-- [ ] Sign-off: lead writer + lead designer
+- [ ] Voice matrix complete (three poles + "what it is not")
+- [ ] Palette or prose mood palette locked (hex/Pantone or narrative equivalent)
+- [ ] One silhouette / shape-language rule (or prose shape rule)
+- [ ] Sign-off: lead writer + lead designer (solo: same owner twice is OK)
 
 ---
 
 ## P3: Brand + channels (weeks 6-8)
+
+**Studio track (`brand`, `creator_ip`):** complete this phase before first **public** ship.
+
+**Fiction / TTRPG track:** skip `41` and `42` until partners or public publish. Record in Skip Registry. You may run **P4 playtest** first (see fiction-ttrpg-tracks).
 
 **Do**
 
@@ -71,9 +77,9 @@ Theory background: [`theory/Creative-World-Building-Research-Framework.md`](theo
 
 **Checkpoint**
 
-- [ ] Partner one-pager exists (brand guidelines passes vendor-safe test: no secret lore spoilers unless marked public)
-- [ ] At least two channels specified
-- [ ] Sign-off: producer / brand ops
+- [ ] Partner one-pager exists when external partners involved (skip if fiction/TTRPG private-only)
+- [ ] At least two channels specified when shipping to audiences (skip if private playtest only)
+- [ ] Sign-off: producer / brand ops (solo: owner name)
 
 ---
 
@@ -87,15 +93,19 @@ Theory background: [`theory/Creative-World-Building-Research-Framework.md`](theo
 cp -R templates/projects/_project_scaffold "projects/$(date +%Y-%m)-first-ship"
 ```
 
+Examples: [`examples/demo-project/story-novel-pitch/`](examples/demo-project/story-novel-pitch/), [`examples/demo-project/game-playtest/`](examples/demo-project/game-playtest/).
+
 2. Fill `PROJECT.md`, `asset_matrix.md`, and `shipping_checklist.md`. Cite `world/` paths. Do not paste lore.
-3. Run [`playbook/shipping-ledger.md`](playbook/shipping-ledger.md) or `ai/agents/brand-friction.md`.
+3. Run shipping audit:
+   - **Visual / partner ship:** [`playbook/shipping-ledger.md`](playbook/shipping-ledger.md) or `ai/agents/brand-friction.md`
+   - **Prose / playtest / text-only:** [`playbook/shipping-ledger-prose.md`](playbook/shipping-ledger-prose.md)
 
 **Checkpoint**
 
 - [ ] Project type set (`story | product | game | marketing | film`)
 - [ ] Narrative hook cites `12_lore_canon`
 - [ ] Asset matrix rows point at world rule sources
-- [ ] Shipping Ledger: all five checks pass
+- [ ] Shipping checklist complete (full or prose ledger; N/A rows justified)
 
 ---
 
@@ -103,14 +113,16 @@ cp -R templates/projects/_project_scaffold "projects/$(date +%Y-%m)-first-ship"
 
 **Do**
 
-1. Complete change protocol and `CANON_VERSION` in `01_governance_ledger.md`.
+1. Complete change protocol, Canon Changelog, and `CANON_VERSION` in `01_governance_ledger.md`.
 2. Tag git when canon bumps: `canon/vX.Y` (see `CONVENTIONS.md`).
 3. Keep anti-library current; refuse trend-chasing into manifesto.
+4. Before MAJOR bumps: [`playbook/playtest-to-canon.md`](playbook/playtest-to-canon.md).
 
 **Checkpoint**
 
 - [ ] Change protocol written
-- [ ] Canon version set
+- [ ] Canon version set; changelog row added
+- [ ] `./scripts/check_canon_version.sh` passes (or warnings resolved)
 - [ ] Spinoff / Legends rule understood by team
 
 ---
@@ -123,10 +135,12 @@ Research captures and meeting notes do not land straight in `world/`. See [`play
 
 ## Dependency reminder
 
-Manifesto → lore → verbal/visual → asset behavior → brand → channel → project.
+**Studio:** manifesto → lore → verbal/visual → asset behavior → brand → channel → **public** project.
 
-Sonic and vaults may lag. Channel before first project. Governance stub early; harden late.
+**Fiction / TTRPG:** manifesto → lore → verbal (+ visual if needed) → project. Brand/channel before **first public** ship, not before playtest or private draft project.
+
+Sonic and vaults may lag. Governance stub early; harden late.
 
 Full map: [`playbook/sequencing.md`](playbook/sequencing.md).
 
-Validation before merge: [`VALIDATION.md`](VALIDATION.md) (`make validate`).
+Validation: [`VALIDATION.md`](VALIDATION.md) (`make validate`, `make validate-canon`).

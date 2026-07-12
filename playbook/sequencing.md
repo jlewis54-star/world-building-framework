@@ -61,3 +61,8 @@ Breaks coherence if deferred:
 - Frontmatter `status: skipped` allowed only where [`world-types.md`](world-types.md) permits.
 - Skipped docs stay in tree with one-line reason in the doc body or governance notes.
 - Do not delete numbered slots. Downstream links assume paths exist.
+
+## Track variants
+
+- **Studio (default):** brand/channel before first public project.
+- **Fiction / TTRPG:** playtest or draft project may precede P3. See [`fiction-ttrpg-tracks.md`](fiction-ttrpg-tracks.md).

@@ -9,6 +9,8 @@ updated: YYYY-MM-DD
 
 # 22 Visual Core
 
+Fiction/TTRPG prose-first: see [`playbook/fiction-prose-fill.md`](../../playbook/fiction-prose-fill.md) for mood palette and shape rules when hex/Figma do not apply.
+
 ## External Source of Truth
 
 | Asset | Path / URL |

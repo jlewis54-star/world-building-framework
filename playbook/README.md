@@ -20,5 +20,9 @@ Do not copy treatise case studies into `world/`. Cite section headings when rati
 2. [`sequencing.md`](sequencing.md): dependency map and phase gates
 3. [`shipping-ledger.md`](shipping-ledger.md): pre-publish audit
 4. [`notes-to-canon.md`](notes-to-canon.md): promote research notes into `world/`
+5. [`fiction-ttrpg-tracks.md`](fiction-ttrpg-tracks.md): alternate paths for prose and tabletop
+6. [`fiction-prose-fill.md`](fiction-prose-fill.md): fill `22`/`23` for manuscript worlds
+7. [`shipping-ledger-prose.md`](shipping-ledger-prose.md): three-check audit for prose ships
+8. [`playtest-to-canon.md`](playtest-to-canon.md): before MAJOR bumps or publish
 
 Start from [`../GETTING_STARTED.md`](../GETTING_STARTED.md).

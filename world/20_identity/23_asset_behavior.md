@@ -9,6 +9,8 @@ updated: YYYY-MM-DD
 
 # 23 Asset Behavior
 
+Fiction/TTRPG prose-first: fill scene texture and POV rules, or skip with reason in governance Skip Registry. See [`playbook/fiction-prose-fill.md`](../../playbook/fiction-prose-fill.md).
+
 ## Camera Protocol
 
 | Spec | Rule |

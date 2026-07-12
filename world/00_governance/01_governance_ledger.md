@@ -26,6 +26,21 @@ updated: YYYY-MM-DD
 | Last tag | canon/v0.1 (when tagged) |
 | Change summary | Initial stub |
 
+## Skip Registry
+
+Docs intentionally not filled yet. Update when un-skipping for publish.
+
+| Doc | status | Reason | Revisit trigger |
+| --- | --- | --- | --- |
+| _e.g. 31_sonic_dna_ | skipped | print-first | first AV campaign |
+| _e.g. 41_brand_guidelines_ | skipped | private TTRPG | itch.io publish |
+
+## Canon Changelog
+
+| Date | Version | Impact | Summary | Docs touched |
+| --- | --- | --- | --- | --- |
+| YYYY-MM-DD | 0.1 | initial | Stub | all |
+
 ## Change Protocol
 
 1. Propose change in PR against the affected `world/` doc.

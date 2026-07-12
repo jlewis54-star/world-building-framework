@@ -98,7 +98,13 @@ check_em_dash() {
 
 check_scaffold_leak() {
   local f="$1" line
-  [[ "$f" != world/* ]] && return 0
+  case "$f" in
+    world/*|projects/*) ;;
+    *) return 0 ;;
+  esac
+  case "$f" in
+    templates/*|examples/demo-project/*) return 0 ;;
+  esac
   for pat in '^## Purpose' '^## Theory' '^## AI Prompt' '^## Review Checklist' '^\*\*APPLIES:\*\*'; do
     while IFS= read -r line; do
       fail "$f: scaffold leak ($pat): $line"
@@ -146,6 +152,17 @@ done
 
 if [[ ${#LINK_FILES[@]} -gt 0 ]]; then
   if ! python3 "$ROOT/scripts/check_links.py" "${LINK_FILES[@]}"; then
+    errors=$((errors + 1))
+  fi
+fi
+
+PROJECT_ARGS=()
+if [[ "$CHANGED_ONLY" -eq 1 ]]; then
+  if ! python3 "$ROOT/scripts/validate_projects.py" --changed; then
+    errors=$((errors + 1))
+  fi
+else
+  if ! python3 "$ROOT/scripts/validate_projects.py"; then
     errors=$((errors + 1))
   fi
 fi
