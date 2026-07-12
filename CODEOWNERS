@@ -1,6 +1,8 @@
 # Default owners for review routing (GitHub CODEOWNERS).
-# Adjust @handles for your team.
+# After clone, replace @YOUR_GITHUB_HANDLE with real team handles.
+# Leave paths commented until you set owners — a fresh clone must not
+# assign reviews to a stranger's handle.
 
-/world/ @jlewis54-star
-/ai/agents/ @jlewis54-star
-/playbook/ @jlewis54-star
+# /world/ @YOUR_GITHUB_HANDLE
+# /ai/agents/ @YOUR_GITHUB_HANDLE
+# /playbook/ @YOUR_GITHUB_HANDLE

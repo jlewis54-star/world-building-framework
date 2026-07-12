@@ -12,6 +12,8 @@ Theory background: [`theory/Creative-World-Building-Research-Framework.md`](theo
 
 ## P0: World profile (before writing lore)
 
+This clone starts with empty stubs in root `world/`. Harbor Line under [`examples/demo-world/`](examples/demo-world/) is sample-only. Do not copy its prose into `world/`. Read [`examples/demo-world/README.md`](examples/demo-world/README.md) for fill density, then write your own canon into the stubs.
+
 **Do**
 
 1. Open [`playbook/world-types.md`](playbook/world-types.md). Pick one primary type: `fiction | brand | creator_ip | ttrpg`.

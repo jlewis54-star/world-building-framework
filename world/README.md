@@ -1,10 +1,12 @@
 # World (your bible)
 
-Filled canon lives here. Thin artifact. Source of truth for lore, identity, brand, and sensory rules.
+Where filled canon will live. This clone ships thin stubs: frontmatter plus `_fill_` sections you replace. Once filled, these docs are the source of truth for lore, identity, brand, and sensory rules.
 
 ## Start
 
 Thin stubs already committed. Replace `_fill_` sections. Follow [`GETTING_STARTED.md`](../GETTING_STARTED.md).
+
+Do **not** copy prose from [`examples/demo-world/`](../examples/demo-world/) (Harbor Line) into `world/`. Read the demo for fill density only.
 
 Do **not** copy thick `templates/` into `world/` to reset. Reset = restore the committed thin stub (`git checkout -- world/path/to/doc.md`).
 

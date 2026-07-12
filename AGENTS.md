@@ -32,7 +32,7 @@ Studio bible register for `world/`, `templates/`, `playbook/`, `projects/`, `ai/
 | Writing | `WRITING.md` |
 | Process | `playbook/` (tracks: [`fiction-ttrpg-tracks.md`](playbook/fiction-ttrpg-tracks.md)) |
 | Blank forms (thick) | `templates/` |
-| Filled bible (thin) | `world/` doc triad table in [`world/README.md`](world/README.md) |
+| Thin stubs / where canon will live | `world/` doc triad table in [`world/README.md`](world/README.md) |
 | Shipping instances | `projects/` |
 | Generation / review | `ai/prompts/`, `ai/agents/`, `ai/skills/`, `ai/reference/` |
 | Theory cites | `theory/Creative-World-Building-Research-Framework.md` |

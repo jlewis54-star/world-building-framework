@@ -6,7 +6,14 @@ cd "$ROOT"
 
 GOV_VER=""
 if [[ -f world/00_governance/01_governance_ledger.md ]]; then
-  GOV_VER=$(rg -o '^\|\s*CANON_VERSION\s*\|\s*\K[^\|]+' world/00_governance/01_governance_ledger.md 2>/dev/null | head -1 | tr -d ' ' || true)
+  # Portable parse: no \K (unsupported by some rg builds). Table cell = field 3.
+  GOV_VER=$(awk -F'|' '
+    /^\|[[:space:]]*CANON_VERSION[[:space:]]*\|/ {
+      gsub(/^[[:space:]]+|[[:space:]]+$/, "", $3)
+      print $3
+      exit
+    }
+  ' world/00_governance/01_governance_ledger.md || true)
 fi
 
 echo "Governance CANON_VERSION: ${GOV_VER:-unknown}"
@@ -22,8 +29,10 @@ for f in projects/*/PROJECT.md; do
   [[ -f "$f" ]] || continue
   found=1
   dir=$(dirname "$f")
-  inherits=$(rg -o '^inherits_canon:\s*\K.+$' "$f" 2>/dev/null | head -1 | tr -d ' ' || echo "?")
-  ptype=$(rg -o '^project_type:\s*\K.+$' "$f" 2>/dev/null | head -1 | tr -d ' ' || echo "?")
+  inherits=$(awk '/^inherits_canon:/ { sub(/^inherits_canon:[[:space:]]*/, ""); gsub(/[[:space:]]+$/, ""); print; exit }' "$f")
+  inherits=${inherits:-?}
+  ptype=$(awk '/^project_type:/ { sub(/^project_type:[[:space:]]*/, ""); gsub(/[[:space:]]+$/, ""); print; exit }' "$f")
+  ptype=${ptype:-?}
   flag=""
   if [[ -n "$GOV_VER" && "$inherits" != "$GOV_VER" && "$inherits" != "?" ]]; then
     flag=" <- STALE (canon is $GOV_VER)"

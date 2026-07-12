@@ -17,10 +17,11 @@ Validation: [`VALIDATION.md`](VALIDATION.md) (`make validate` or `./scripts/vali
 1. Clone this repo.
 2. Read [`GETTING_STARTED.md`](GETTING_STARTED.md). Follow phases P0 through P5.
 3. Thin stubs already sit in `world/`. Replace `_fill_` sections. Do **not** copy thick `templates/` into `world/` to reset.
-4. **P0:** Set world profile in [`world/00_governance/01_governance_ledger.md`](world/00_governance/01_governance_ledger.md) (type, hard/soft dial, owners).
-5. **P1:** Fill [`world/10_foundations/11_manifesto.md`](world/10_foundations/11_manifesto.md) and [`world/10_foundations/12_lore_canon.md`](world/10_foundations/12_lore_canon.md).
-6. **P2 to P3:** Identity systems, then brand and channel (fiction/TTRPG may defer P3: [`playbook/fiction-ttrpg-tracks.md`](playbook/fiction-ttrpg-tracks.md)).
-7. **P4:** Copy scaffold to `projects/YYYY-MM-slug/`. Examples: [`examples/demo-project/`](examples/demo-project/).
+4. Root `world/` is **your** empty stubs. Do **not** copy prose from [`examples/demo-world/`](examples/demo-world/) (Harbor Line) into `world/`. Read the demo for fill density only.
+5. **P0:** Set world profile in [`world/00_governance/01_governance_ledger.md`](world/00_governance/01_governance_ledger.md) (type, hard/soft dial, owners).
+6. **P1:** Fill [`world/10_foundations/11_manifesto.md`](world/10_foundations/11_manifesto.md) and [`world/10_foundations/12_lore_canon.md`](world/10_foundations/12_lore_canon.md).
+7. **P2 to P3:** Identity systems, then brand and channel (fiction/TTRPG may defer P3: [`playbook/fiction-ttrpg-tracks.md`](playbook/fiction-ttrpg-tracks.md)).
+8. **P4:** Copy scaffold to `projects/YYYY-MM-slug/`. Examples: [`examples/demo-project/`](examples/demo-project/).
 
 Doc triad (stub, template, prompt): [`world/README.md`](world/README.md).
 
@@ -37,7 +38,7 @@ AI workflows: [`AGENTS.md`](AGENTS.md) and [`ai/`](ai/).
 | `theory/` | Research treatise. Cite. Not your canon. |
 | `playbook/` | Process: world types, sequencing, shipping audit, notes→canon. |
 | `templates/` | Thick scaffolding: Purpose, APPLIES, Theory, Example, prompt links, Review Checklist. Never fill as lasting canon. |
-| `world/` | Thin filled bible. Frontmatter + fill sections only. Source of truth. |
+| `world/` | Thin stubs you fill. Where filled canon will live. Frontmatter + fill sections only. |
 | `projects/` | Shipping outputs. Inherit from `world/`. Do not duplicate lore. |
 | `ai/` | Prompts, agents, vendored skills. |
 | `examples/` | Demo world and notes scratch (non-authoritative). |
@@ -49,10 +50,11 @@ AI workflows: [`AGENTS.md`](AGENTS.md) and [`ai/`](ai/).
 ## Reading track (new collaborators)
 
 1. [`GETTING_STARTED.md`](GETTING_STARTED.md) and [`playbook/world-types.md`](playbook/world-types.md)
-2. [`examples/demo-world/`](examples/demo-world/) for fill density
-3. [`world/10_foundations/11_manifesto.md`](world/10_foundations/11_manifesto.md)
-4. Fiction/TTRPG: [`playbook/fiction-ttrpg-tracks.md`](playbook/fiction-ttrpg-tracks.md)
-5. Theory: [`theory/`](theory/) when playbook cites it (not day one)
+2. [`world/README.md`](world/README.md): empty stubs; do not paste demo prose into `world/`
+3. [`examples/demo-world/README.md`](examples/demo-world/README.md), then [`examples/demo-world/`](examples/demo-world/) for fill density only (Harbor Line is sample-only)
+4. [`world/10_foundations/11_manifesto.md`](world/10_foundations/11_manifesto.md) (your stub to fill)
+5. Fiction/TTRPG: [`playbook/fiction-ttrpg-tracks.md`](playbook/fiction-ttrpg-tracks.md)
+6. Theory: [`theory/`](theory/) when playbook cites it (not day one)
 
 Orientation lives here and in `GETTING_STARTED.md`. Not duplicated into each world doc.
 

@@ -47,13 +47,17 @@ DOC_PATHS = {
 
 
 def parse_world_type(text: str) -> str | None:
+    """Return a single chosen type, or None for unset / stub / multi-option cells."""
     m = re.search(r"^\|\s*World type\s*\|\s*([^\|]+)\|", text, re.MULTILINE)
     if not m:
         return None
     val = m.group(1).strip().lower()
-    for token in PROFILES:
-        if token in val.replace("-", "_").replace(" ", "_"):
-            return token
+    if not val or val == "_fill_" or "/" in val:
+        # Stub e.g. "fiction / brand / creator_ip / ttrpg" is not a choice.
+        return None
+    normalized = val.replace("-", "_").replace(" ", "_")
+    if normalized in PROFILES:
+        return normalized
     return None
 
 
@@ -64,8 +68,9 @@ def doc_status(path: Path) -> str:
     m = re.search(r"^status:\s*(.+)$", text, re.MULTILINE)
     if m:
         return m.group(1).strip()
-    if "_fill_" in text:
-        return "draft-empty"
+    fill_n = text.count("_fill_")
+    if fill_n:
+        return f"draft-empty ({fill_n} _fill_)"
     return "unknown"
 
 
@@ -76,7 +81,7 @@ def main() -> None:
     text = GOV.read_text(encoding="utf-8")
     wt = parse_world_type(text)
     if not wt or wt not in PROFILES:
-        print("World type not set in governance. Run P0.")
+        print("World type not set. Choose one of: fiction | brand | creator_ip | ttrpg")
         return
     prof = PROFILES[wt]
     print(f"World type: {wt}\n")
@@ -87,7 +92,7 @@ def main() -> None:
             path = ROOT / rel
             st = doc_status(path)
             flag = ""
-            if st == "draft-empty" and doc_id in prof["required"]:
+            if st.startswith("draft-empty") and doc_id in prof["required"]:
                 flag = " <- BLOCKER"
             elif st == "skipped" and doc_id in prof["required"]:
                 flag = " <- WARN: required but skipped"
