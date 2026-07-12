@@ -8,6 +8,8 @@ Theory background: [`theory/Creative-World-Building-Research-Framework.md`](theo
 
 `world/` files are thin stubs (frontmatter + fill sections). Scaffolding, prompts, and checklists live under `templates/` and `ai/`.
 
+**Public repo note:** This framework ships empty stubs on public `main`. If you are building real canon you do not want public, use a private fork and [`playbook/private-world-workflow.md`](playbook/private-world-workflow.md) before filling `world/`.
+
 ---
 
 ## P0: World profile (before writing lore)

@@ -1,0 +1,46 @@
+name: Bug report
+description: Validation failure, broken link, script error, or CI problem
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Run `make validate` locally before filing when possible. See [`VALIDATION.md`](../../VALIDATION.md).
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened
+      description: Expected vs actual behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Commands, file paths, branch name.
+      placeholder: |
+        1. Checkout branch ...
+        2. Run make validate
+        3. See error ...
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, bash/python/rg versions if relevant.
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error output
+      description: Paste relevant terminal or CI log excerpt.
+      render: shell
+    validations:
+      required: false

@@ -46,6 +46,10 @@ AI workflows: [`AGENTS.md`](AGENTS.md) and [`ai/`](ai/).
 | `reference/voice.md` | Shared prose rules (interaction + drafting). |
 | `CONVENTIONS.md` | Naming, canon versioning, contribution, spinoffs. |
 | `VALIDATION.md` | Markdown validation before merge. |
+| `CONTRIBUTING.md` | How to PR; keep your world IP private. |
+| `SECURITY.md` | Vulnerability reporting. |
+| `playbook/public-repo-governance.md` | GitHub Settings checklist for maintainers. |
+| `playbook/private-world-workflow.md` | Keep filled canon off public `main`. |
 
 ## Reading track (new collaborators)
 

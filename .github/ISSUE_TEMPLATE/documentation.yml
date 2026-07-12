@@ -1,0 +1,37 @@
+name: Documentation
+description: Unclear docs, missing playbook step, or governance question
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For canon or creative questions, use your private fork workflow ([`playbook/private-world-workflow.md`](../../playbook/private-world-workflow.md)).
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear or missing
+      description: Which doc path and section.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      description: Optional fix or addition.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Area
+      options:
+        - label: GETTING_STARTED / onboarding
+        - label: playbook/
+        - label: templates/ or world/ stubs
+        - label: ai/ prompts or agents
+        - label: examples/
+        - label: Governance / contributing

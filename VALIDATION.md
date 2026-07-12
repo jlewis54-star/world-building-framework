@@ -53,7 +53,7 @@ Or run scripts directly from [`scripts/`](scripts/).
 | Canon drift | `make validate-canon` | governance vs frontmatter vs `inherits_canon` |
 | World-type fit | `make world-dashboard` | required / recommended / skip_ok by profile |
 
-Scanned paths: `world/`, `playbook/`, `ai/`, `templates/`, `examples/`, `projects/`, root docs. `theory/` excluded.
+Scanned paths: `world/`, `playbook/`, `ai/`, `templates/`, `examples/`, `projects/`, root docs (including `CONTRIBUTING.md` and `SECURITY.md`). `theory/` excluded.
 
 ## CI
 
