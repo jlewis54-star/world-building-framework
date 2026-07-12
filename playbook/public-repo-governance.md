@@ -2,7 +2,7 @@
 
 One-time GitHub Settings checklist for maintainers of this public framework repo. Run after clone or when hardening a new public remote.
 
-Automated partial setup: [`scripts/github-repo-setup.sh`](../scripts/github-repo-setup.sh) (branch protection via `gh` CLI).
+Automated partial setup: `scripts/github-repo-setup.sh` (branch protection via `gh` CLI).
 
 Manual steps below cover UI-only toggles. Complete each section in order.
 
@@ -13,11 +13,15 @@ Manual steps below cover UI-only toggles. Complete each section in order.
 1. You are repo **Admin** on GitHub.
 2. Install [GitHub CLI](https://cli.github.com/) and run `gh auth login`.
 3. Default branch is `main`.
-4. CI workflow exists: [`.github/workflows/validate.yml`](../.github/workflows/validate.yml) (job name: **`validate`**).
+4. CI workflow exists: `.github/workflows/validate.yml` (job name: `validate`).
 
 ---
 
-## 1. Branch protection on `main`
+## 1. Branch protection on `main` (optional)
+
+**Solo owner:** skip this section. Push directly to `main`. Run `./scripts/github-repo-setup.sh --remove-protection` if a prior setup blocked direct push.
+
+**Teams:** use branch protection so strangers cannot push to `main`.
 
 **Path:** Repo → **Settings** → **Branches** → **Add branch protection rule** (or edit existing rule for `main`).
 
@@ -25,17 +29,17 @@ Manual steps below cover UI-only toggles. Complete each section in order.
 | --- | --- |
 | Branch name pattern | `main` |
 | Require a pull request before merging | On |
-| Require approvals | Off (solo maintainer) or 1 (team) |
+| Require approvals | Off (solo) or 1 (team) |
 | Require status checks to pass | On |
 | Required status check | `validate` (exact job name from Actions tab) |
 | Require branches to be up to date | On (recommended) |
-| Do not allow bypassing the above settings | On |
+| Do not allow bypassing the above settings | Off if owner must push direct; On for strict teams |
 | Allow force pushes | Off |
 | Allow deletions | Off |
 
-**Verify:** Push a test commit directly to `main` from local. GitHub should reject it. Open a PR from a branch; merge should stay blocked until `validate` is green.
+**Verify (teams only):** Direct push to `main` rejected. PR merge blocked until `validate` is green.
 
-**Automate:** `./scripts/github-repo-setup.sh` applies most of this via API.
+**Automate (teams only):** `./scripts/github-repo-setup.sh --protect-main`
 
 ---
 
@@ -93,7 +97,7 @@ Enable every toggle available on your plan:
 
 ## 5. Dependabot version updates
 
-**Path:** Repo file [`.github/dependabot.yml`](../.github/dependabot.yml) (committed in this repo).
+**Path:** Repo file `.github/dependabot.yml` (committed in this repo).
 
 Covers `github-actions` dependency bumps weekly. No npm/pip in this repo.
 
@@ -119,7 +123,7 @@ Covers `github-actions` dependency bumps weekly. No npm/pip in this repo.
 
 ## 7. CODEOWNERS and review routing
 
-**Path:** Committed file [`CODEOWNERS`](../CODEOWNERS) at repo root.
+**Path:** Committed file `CODEOWNERS` at repo root.
 
 GitHub auto-requests review from listed owners on PRs that touch owned paths.
 
@@ -156,6 +160,6 @@ Delete or revert the test change if it has no lasting value.
 
 | Doc | Role |
 | --- | --- |
-| [`CONTRIBUTING.md`](../CONTRIBUTING.md) | PR workflow for contributors |
-| [`playbook/private-world-workflow.md`](private-world-workflow.md) | Keep filled canon off public `main` |
-| [`SECURITY.md`](../SECURITY.md) | Vulnerability reporting |
+| `CONTRIBUTING.md` | PR workflow for contributors |
+| `playbook/private-world-workflow.md` | Keep filled canon off public `main` |
+| `SECURITY.md` | Vulnerability reporting |

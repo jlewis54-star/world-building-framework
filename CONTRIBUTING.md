@@ -13,12 +13,12 @@ This public repo ships **empty** root `world/` stubs. Filled canon is your IP. I
 
 ## Workflow
 
-1. Branch from `main` (never commit directly to `main` once branch protection is on).
+1. Branch from `main`, or commit directly to `main` if you are the solo owner (no branch protection).
 2. Edit. Run validation before opening a PR.
 3. Open a PR. Wait for CI (`validate` job) to pass.
 4. Merge (squash recommended). Delete the branch.
 
-Solo maintainers follow the same flow. PR + CI catches broken links and convention drift before merge.
+Solo owners may push to `main` directly. Teams should use PR + CI before merge.
 
 ## Validation
 
