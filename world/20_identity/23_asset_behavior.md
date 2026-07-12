@@ -42,3 +42,5 @@ What may exist inside the world vs superimposed for the audience (titles, UI chr
 | --- | --- | --- |
 | Diegetic | _fill_ | _fill_ |
 | Non-diegetic | _fill_ | _fill_ |
+
+Process: [`templates/20_identity/23_asset_behavior.md`](../../templates/20_identity/23_asset_behavior.md) · Prompt: [`ai/prompts/23_asset_behavior.md`](../../ai/prompts/23_asset_behavior.md)

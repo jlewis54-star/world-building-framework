@@ -38,3 +38,5 @@ _fill_
 | --- | --- |
 | In-world sources | _fill_ |
 | Score / non-diegetic | _fill_ |
+
+Process: [`templates/30_sensory/31_sonic_dna.md`](../../templates/30_sensory/31_sonic_dna.md) · Prompt: [`ai/prompts/31_sonic_dna.md`](../../ai/prompts/31_sonic_dna.md)

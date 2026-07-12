@@ -57,3 +57,5 @@ Rank channels you actually operate. Do not invent calendars for unused channels.
 1. _fill_
 2. _fill_
 3. _fill_
+
+Process: [`templates/40_brand/42_channel_playbook.md`](../../templates/40_brand/42_channel_playbook.md) · Prompt: [`ai/prompts/42_channel_playbook.md`](../../ai/prompts/42_channel_playbook.md)

@@ -1,0 +1,6 @@
+# Default owners for review routing (GitHub CODEOWNERS).
+# Adjust @handles for your team.
+
+/world/ @jlewis54-star
+/ai/agents/ @jlewis54-star
+/playbook/ @jlewis54-star

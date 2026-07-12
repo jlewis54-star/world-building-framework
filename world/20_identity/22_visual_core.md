@@ -52,6 +52,6 @@ Rules: _fill_ (e.g. no free pairing outside this table).
 
 ## Silhouette / Shape Language
 
-One rule mapping geometry to meaning (picture superiority / somatic shapes).
-
 _fill_
+
+Process: [`templates/20_identity/22_visual_core.md`](../../templates/20_identity/22_visual_core.md) · Prompt: [`ai/prompts/22_visual_core.md`](../../ai/prompts/22_visual_core.md)

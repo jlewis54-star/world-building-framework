@@ -6,9 +6,11 @@ Covers fictional universes, brand worlds, creator IP, and tabletop settings. Sam
 
 Primary user: small creative team / studio ops. Tone: dense reference docs. See [`WRITING.md`](WRITING.md) (prefer [`ai/skills/writing-standard`](ai/skills/writing-standard/SKILL.md)).
 
-Validation: [`VALIDATION.md`](VALIDATION.md) (`./scripts/validate.sh`).
+Validation: [`VALIDATION.md`](VALIDATION.md) (`make validate` or `./scripts/validate.sh`).
 
-## Five-minute start
+## Prerequisites
+
+- bash, python3, ripgrep (`rg`), make (optional; for `make validate`)
 
 1. Clone this repo.
 2. Read [`GETTING_STARTED.md`](GETTING_STARTED.md). Follow phases P0 through P5.

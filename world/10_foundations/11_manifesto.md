@@ -45,6 +45,6 @@ _fill_
 
 ## Physical Constraint (optional bridge)
 
-Translate emotion into a material rule (treatise Step 3).
-
 _fill_
+
+Process: [`templates/10_foundations/11_manifesto.md`](../../templates/10_foundations/11_manifesto.md) · Prompt: [`ai/prompts/11_manifesto.md`](../../ai/prompts/11_manifesto.md)

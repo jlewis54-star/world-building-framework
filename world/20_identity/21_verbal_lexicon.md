@@ -43,3 +43,5 @@ High-frequency fillers that break character. Provide replacements.
 | Product label | _fill_ | _fill_ |
 | Error message | _fill_ | _fill_ |
 | Press blurb | _fill_ | _fill_ |
+
+Process: [`templates/20_identity/21_verbal_lexicon.md`](../../templates/20_identity/21_verbal_lexicon.md) · Prompt: [`ai/prompts/21_verbal_lexicon.md`](../../ai/prompts/21_verbal_lexicon.md)

@@ -67,7 +67,7 @@ Theory background: [`theory/Creative-World-Building-Research-Framework.md`](theo
 
 1. Fill `world/40_brand/41_brand_guidelines.md`: partner-safe extraction of identity.
 2. Fill `world/40_brand/42_channel_playbook.md`: digital, physical, social, spatial rules.
-3. Seed vaults: `51_mood_vault.md`, `52_anti_library.md` (can stay thin).
+3. Seed vaults: [`world/50_vault/51_mood_vault.md`](world/50_vault/51_mood_vault.md), [`world/50_vault/52_anti_library.md`](world/50_vault/52_anti_library.md) (can stay thin).
 
 **Checkpoint**
 
@@ -129,4 +129,4 @@ Sonic and vaults may lag. Channel before first project. Governance stub early; h
 
 Full map: [`playbook/sequencing.md`](playbook/sequencing.md).
 
-Validation before merge: [`VALIDATION.md`](VALIDATION.md) (`./scripts/validate.sh`).
+Validation before merge: [`VALIDATION.md`](VALIDATION.md) (`make validate`).

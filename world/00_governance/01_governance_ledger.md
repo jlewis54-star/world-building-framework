@@ -46,3 +46,5 @@ updated: YYYY-MM-DD
 | 31_sonic_dna | | | | |
 | 41_brand_guidelines | | | | |
 | 42_channel_playbook | | | | |
+
+Process: [`templates/00_governance/01_governance_ledger.md`](../../templates/00_governance/01_governance_ledger.md) · Prompt: [`ai/prompts/01_governance_ledger.md`](../../ai/prompts/01_governance_ledger.md)

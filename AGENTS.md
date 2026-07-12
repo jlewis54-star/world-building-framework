@@ -36,7 +36,7 @@ Studio bible register for `world/`, `templates/`, `playbook/`, `projects/`, `ai/
 | Shipping instances | `projects/` |
 | Generation / review | `ai/prompts/`, `ai/agents/`, `ai/skills/` |
 | Theory cites | `theory/Creative-World-Building-Research-Framework.md` |
-| Validation | [`VALIDATION.md`](VALIDATION.md): run `./scripts/validate.sh` before merge |
+| Validation | [`VALIDATION.md`](VALIDATION.md): `make validate` or `./scripts/validate.sh` |
 
 ## Agent kit
 

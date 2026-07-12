@@ -57,3 +57,5 @@ _fill_
 | May appear publicly | Must stay internal |
 | --- | --- | --- |
 | _fill_ | _fill_ |
+
+Process: [`templates/40_brand/41_brand_guidelines.md`](../../templates/40_brand/41_brand_guidelines.md) · Prompt: [`ai/prompts/41_brand_guidelines.md`](../../ai/prompts/41_brand_guidelines.md)

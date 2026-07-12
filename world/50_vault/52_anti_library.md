@@ -26,3 +26,5 @@ updated: YYYY-MM-DD
 | Phrase / mode | Rejection rule |
 | --- | --- | --- |
 | _fill_ | _fill_ |
+
+Process: [`templates/50_vault/52_anti_library.md`](../../templates/50_vault/52_anti_library.md) · Prompt: [`ai/prompts/52_anti_library.md`](../../ai/prompts/52_anti_library.md)

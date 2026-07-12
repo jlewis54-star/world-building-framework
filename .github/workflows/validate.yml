@@ -9,7 +9,9 @@ on:
       - 'ai/**'
       - 'templates/**'
       - 'examples/**'
+      - 'projects/**'
       - 'scripts/**'
+      - 'Makefile'
       - '*.md'
   pull_request:
     paths:
@@ -18,7 +20,9 @@ on:
       - 'ai/**'
       - 'templates/**'
       - 'examples/**'
+      - 'projects/**'
       - 'scripts/**'
+      - 'Makefile'
       - '*.md'
 
 jobs:

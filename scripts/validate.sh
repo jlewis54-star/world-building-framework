@@ -21,9 +21,9 @@ if [[ "${1:-}" == "--changed" ]]; then
   CHANGED_ONLY=1
 fi
 
-SCAN_DIRS="world playbook ai templates examples"
+SCAN_DIRS="world playbook ai templates examples projects"
 ROOT_DOCS="README.md GETTING_STARTED.md CONVENTIONS.md WRITING.md AGENTS.md VALIDATION.md"
-BANNED_SCAN_DIRS="world playbook templates examples"
+BANNED_SCAN_DIRS="world playbook templates examples projects"
 
 errors=0
 

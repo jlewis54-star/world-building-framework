@@ -50,3 +50,5 @@ Core personas, aliases, narrator voices.
 | Name | Relational trait | Primary vulnerability | Public? |
 | --- | --- | --- | --- |
 | _fill_ | _fill_ | _fill_ | yes/no |
+
+Process: [`templates/10_foundations/12_lore_canon.md`](../../templates/10_foundations/12_lore_canon.md) · Prompt: [`ai/prompts/12_lore_canon.md`](../../ai/prompts/12_lore_canon.md)
