@@ -1,0 +1,31 @@
+{
+  "skill": "skill-authoring",
+  "version": 1,
+  "evals": [
+    {
+      "id": "create-new-skill-from-scratch",
+      "prompt": "I have a 7-step runbook for onboarding new studio vendors. Help me turn it into a skill my agent can run from a brief URL.",
+      "expected_output": "Rich skill folder plan or draft with Purpose, Workflow steps marked deterministic/agentic, validation checklist from runbook, references/adapters.md for tool bindings, and eval cases. Points to skill-creation-best-practices.md rather than duplicating it.",
+      "files": []
+    },
+    {
+      "id": "extract-from-session",
+      "prompt": "We just finished a workflow that searched Jira, pulled account IDs, and opened a CR. Save this as a reusable skill called endpoint-onboarding.",
+      "expected_output": "Session extraction workflow: gather trigger/inputs, skeleton with session tools only, structured steps with Validate and On failure, Lessons Learned section, offer to save and generate evals.",
+      "files": []
+    },
+    {
+      "id": "improve-triggering",
+      "prompt": "My csv-analysis skill never triggers when users say 'look at this spreadsheet'. The body is fine. Fix the description.",
+      "expected_output": "Revised imperative description naming spreadsheet/CSV/tabular intent and when to activate. May reference trigger eval methodology. Does not rewrite unrelated workflow sections.",
+      "files": []
+    },
+    {
+      "id": "edge-missing-adapter",
+      "prompt": "Author a skill that uses save_skill and extract_session_data. I'm on Cursor only.",
+      "expected_output": "Core workflow with function names; Quick tools mapped in references/adapters.md with Cursor omit paths (manual skeleton, Write tool save). Does not pretend Quick tools exist on Cursor.",
+      "files": []
+    }
+  ],
+  "assertions_notes": "Add concrete assertions after first runs. Examples: 'references/adapters.md exists', 'description under 1024 chars', 'no banned words', 'steps have On failure'."
+}

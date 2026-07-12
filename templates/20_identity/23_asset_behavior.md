@@ -68,7 +68,7 @@ What may exist inside the world vs superimposed for the audience (titles, UI chr
 
 ## AI Prompt
 
-Canonical prompt: [`ai/prompts/23_asset_behavior.md`](../../ai/prompts/23_asset_behavior.md). Do not duplicate the prompt body here.
+Canonical prompt: [`ai/prompts/23_asset_behavior.md`](../../ai/prompts/23_asset_behavior.md). Load shared constraints: [`ai/prompts/_shared_constraints.md`](../../ai/prompts/_shared_constraints.md). Do not duplicate the prompt body here.
 
 
 ## Review Checklist

@@ -64,7 +64,7 @@ _fill_
 
 ## AI Prompt
 
-Canonical prompt: [`ai/prompts/31_sonic_dna.md`](../../ai/prompts/31_sonic_dna.md). Do not duplicate the prompt body here.
+Canonical prompt: [`ai/prompts/31_sonic_dna.md`](../../ai/prompts/31_sonic_dna.md). Load shared constraints: [`ai/prompts/_shared_constraints.md`](../../ai/prompts/_shared_constraints.md). Do not duplicate the prompt body here.
 
 
 ## Review Checklist

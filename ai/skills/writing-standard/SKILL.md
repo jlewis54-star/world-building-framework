@@ -5,11 +5,11 @@ title: Writing Standard
 description: >-
   Enforce clear, direct, data-driven prose and remove AI slop. Use when improving
   writing, reviewing a doc or email, rewriting for clarity, checking against
-  studio writing standards, or humanizing AI drafts in this worldbuilding repo.
-  Primary targets: playbook docs, thin world stubs, project briefs, shipping
-  copy, partner guidelines. Do NOT use to invent a world's brand voice from
-  scratch (that is world/21_verbal_lexicon) or to write final creative fiction
-  that intentionally breaks formal standards.
+  studio writing standards, or humanizing AI drafts, even if the user does not
+  name writing-standard or WRITING.md. Primary targets: playbook docs, thin world
+  stubs, project briefs, shipping copy, partner guidelines. Do NOT use to invent
+  a world's brand voice from scratch (world/21_verbal_lexicon) or final creative
+  fiction that intentionally breaks formal standards.
 version: "1.2.0"
 timestamp: 2026-07-12
 ---
@@ -44,18 +44,15 @@ Do not restate the banned-word list here. Load Drafting voice for repo docs and 
 
 Also enforce root [`WRITING.md`](../../../WRITING.md) self-check.
 
-## Core principles (always apply)
+## Core principles
 
-1. **Specific over vague:** numbers, paths, owners, not adjectives ("73% improvement", not "significant improvement").
-2. **Active voice:** subject does the action ("We completed", not "was completed by").
-3. **Pyramid structure:** conclusion first, evidence after.
-4. **No weasel words:** cut "very", "approximately", "we believe", "it seems"; replace with data or drop.
-5. **Short blocks:** paragraphs 3-5 sentences; bullets for 3+ parallel items.
-6. **Precise asks:** owner named, deadline stated, ask explicit (for messages and action items).
+Load and apply [`references/writing-standards.md`](references/writing-standards.md) on every pass. Do not restate the six principles here.
 
 ## Workflow
 
 ### 1. Classify the text
+
+**Mode:** diagnosis (classify only; no rewrite yet).
 
 Identify:
 
@@ -66,7 +63,13 @@ Identify:
 
 If final creative fiction or pure marketing hype was requested, stop and say out of scope for this skill (point at `world/` voice docs or a creative brief instead).
 
+**Validate:** format, goal, audience, and source identified.
+
+**On failure:** ask one clarifying question; do not rewrite until scope is clear.
+
 ### 2. Diagnose top issues
+
+**Mode:** audit (read-only on source text).
 
 Scan for the three highest-impact problems. Priority order:
 
@@ -82,7 +85,13 @@ Load `references/writing-standards.md` for email and short-doc patterns.
 Load `references/ai-slop-detection.md` when source is AI or text feels generic.
 Load `references/writing-handbook.md` for long procedures or formatting disputes.
 
+**Validate:** top three issues named with quotes or line references.
+
+**On failure:** re-scan using priority order; do not skip to rewrite with fewer than three issues unless text is under 50 words.
+
 ### 3. Rewrite
+
+**Mode:** edit (apply fixes).
 
 Apply fixes in this order:
 
@@ -100,7 +109,13 @@ Apply fixes in this order:
 
 Do not invent facts or lore. If data is missing, flag it; do not fabricate numbers or continuity.
 
+**Validate:** revised text addresses the three diagnosed issues.
+
+**On failure:** loop to step 2 with remaining issues.
+
 ### 4. Self-check before delivery
+
+**Mode:** validate (checklist only).
 
 Run every item:
 
@@ -115,7 +130,11 @@ Run every item:
 - [ ] Pub test: would you say this to a studio teammate
 - [ ] If target is `world/`: no Purpose / Theory / AI Prompt / Review Checklist leaked in
 
+**On failure:** fix failing items before step 5. Do not deliver partial passes.
+
 ### 5. Present output
+
+**Mode:** deliver.
 
 Use this structure unless user asks for rewrite only:
 

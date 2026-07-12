@@ -6,8 +6,8 @@ description: >-
   Turn meeting transcripts, creative critiques, or raw research captures into
   structured notes with low ambiguity. Use for meeting notes, call notes,
   research atoms, lore intake before canon promotion, or any note that must
-  pass the single-interpretation test. Spawn a subagent for long transcripts
-  or multi-note extraction batches.
+  pass the single-interpretation test, even if the user does not say atomic
+  or low-ambiguity. Spawn a subagent for long transcripts or multi-note batches.
 version: "1.1.0"
 timestamp: 2026-07-12
 ---
@@ -41,6 +41,8 @@ This repo promotes notes into canon through [`playbook/notes-to-canon.md`](../..
 
 ## Meeting notes workflow
 
+**Mode:** meeting capture.
+
 1. Confirm mode: meeting notes (default for transcript).
 2. Load `references/meeting-notes-format.md`. Follow section order and filename rules exactly.
 3. Do not fabricate names, numbers, owners, or topics not in source.
@@ -48,13 +50,23 @@ This repo promotes notes into canon through [`playbook/notes-to-canon.md`](../..
 5. Output filename as first line (bold). Metadata block second.
 6. If user wants table digest, append or replace summary sections per `references/meeting-extraction-tables.md` only when asked.
 
+**Validate:** every action item and metric traceable to source or tagged `[NO METRIC IN SOURCE]` / `[DATA NEEDED]`.
+
+**On failure:** re-read source segment; do not invent missing owners or dates.
+
 ## Atomic notes workflow
+
+**Mode:** atomic capture.
 
 1. One concept per file. Kebab-case filename unless user supplies vault convention.
 2. Optional frontmatter: `source`, `tags`, `date` (see `references/atomic-notes-quality.md`).
 3. Run all seven anti-hallucination steps before delivery.
 4. Retrieval simulation on every stored line.
 5. If the claim might change canon, add a one-line `promote_to:` hint naming a `world/` path or `none`.
+
+**Validate:** single-interpretation test passes on every stored line.
+
+**On failure:** split multi-claim lines or mark ambiguity explicit; never soft claims as questions buried in prose.
 
 ## Delegate to subagent
 

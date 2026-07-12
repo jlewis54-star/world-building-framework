@@ -1,0 +1,25 @@
+<!-- assets/output-template.html -->
+<!-- Agent reads this and fills {{placeholders}} at render time -->
+<!-- Keep templates self-contained (inline CSS, no external deps) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: "Calibri", Arial, sans-serif; }
+    .panel { background: #232F3E; border: 1px solid #37475A; border-radius: 8px; padding: 16px; margin: 12px 0; }
+    .panel h3 { color: #FF9900; margin: 0 0 8px 0; font-size: 14px; }
+    .panel p { color: #F5F5F5; margin: 0; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <h1>{{title}}</h1>
+  <p>{{summary}}</p>
+
+  <div class="panel">
+    <h3>{{section_heading}}</h3>
+    <p>{{section_content}}</p>
+  </div>
+</body>
+</html>

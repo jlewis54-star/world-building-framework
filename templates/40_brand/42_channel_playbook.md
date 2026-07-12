@@ -83,7 +83,7 @@ Rank channels you actually operate. Do not invent calendars for unused channels.
 
 ## AI Prompt
 
-Canonical prompt: [`ai/prompts/42_channel_playbook.md`](../../ai/prompts/42_channel_playbook.md). Do not duplicate the prompt body here.
+Canonical prompt: [`ai/prompts/42_channel_playbook.md`](../../ai/prompts/42_channel_playbook.md). Load shared constraints: [`ai/prompts/_shared_constraints.md`](../../ai/prompts/_shared_constraints.md). Do not duplicate the prompt body here.
 
 
 ## Review Checklist

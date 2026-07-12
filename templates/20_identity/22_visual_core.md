@@ -81,7 +81,7 @@ _fill_
 
 ## AI Prompt
 
-Canonical prompt: [`ai/prompts/22_visual_core.md`](../../ai/prompts/22_visual_core.md). Do not duplicate the prompt body here.
+Canonical prompt: [`ai/prompts/22_visual_core.md`](../../ai/prompts/22_visual_core.md). Load shared constraints: [`ai/prompts/_shared_constraints.md`](../../ai/prompts/_shared_constraints.md). Do not duplicate the prompt body here.
 
 
 ## Review Checklist

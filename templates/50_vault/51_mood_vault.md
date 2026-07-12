@@ -52,7 +52,7 @@ Treatise: Layer 4 The Archive; `Interface Archaeology, Nostalgia, and Digital Me
 
 ## AI Prompt
 
-Canonical prompt: [`ai/prompts/51_mood_vault.md`](../../ai/prompts/51_mood_vault.md). Do not duplicate the prompt body here.
+Canonical prompt: [`ai/prompts/51_mood_vault.md`](../../ai/prompts/51_mood_vault.md). Load shared constraints: [`ai/prompts/_shared_constraints.md`](../../ai/prompts/_shared_constraints.md). Do not duplicate the prompt body here.
 
 
 ## Review Checklist

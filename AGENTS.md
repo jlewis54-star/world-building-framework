@@ -34,10 +34,10 @@ Studio bible register for `world/`, `templates/`, `playbook/`, `projects/`, `ai/
 | Blank forms (thick) | `templates/` |
 | Filled bible (thin) | `world/` doc triad table in [`world/README.md`](world/README.md) |
 | Shipping instances | `projects/` |
-| Generation / review | `ai/prompts/`, `ai/agents/`, `ai/skills/` |
+| Generation / review | `ai/prompts/`, `ai/agents/`, `ai/skills/`, `ai/reference/` |
 | Theory cites | `theory/Creative-World-Building-Research-Framework.md` |
 | Validation | [`VALIDATION.md`](VALIDATION.md): `make validate` or `./scripts/validate.sh` |
 
 ## Agent kit
 
-When generating or reviewing world docs, load the matching prompt under `ai/prompts/` and the relevant agent under `ai/agents/` (`canon-consistency`, `brand-friction`, `project-brief-expander`). Apply writing-standard to every drafted line. Write only into thin fill sections.
+When generating or reviewing world docs, load the matching prompt under `ai/prompts/` (link [`ai/prompts/_shared_constraints.md`](ai/prompts/_shared_constraints.md) first) and the relevant agent under `ai/agents/` (`canon-consistency`, `brand-friction`, `project-brief-expander`). For skill/agent authoring, use vendored `skill-authoring`, `instruction-refiner`, or `ai-engineer` per [`ai/README.md`](ai/README.md). Apply writing-standard to every drafted line. Write only into thin fill sections.

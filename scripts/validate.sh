@@ -167,6 +167,14 @@ else
   fi
 fi
 
+if ! bash "$ROOT/scripts/check_ai_leakage.sh"; then
+  errors=$((errors + 1))
+fi
+
+if ! python3 "$ROOT/scripts/check_ai_frontmatter.py"; then
+  errors=$((errors + 1))
+fi
+
 if [[ "$errors" -gt 0 ]]; then
   echo ""
   echo "Validation failed with $errors error(s)."

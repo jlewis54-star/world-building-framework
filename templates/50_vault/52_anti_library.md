@@ -48,7 +48,7 @@ Explicit do-not-copy list and adjacent competitor worlds. Keeps trend pressure o
 
 ## AI Prompt
 
-Canonical prompt: [`ai/prompts/52_anti_library.md`](../../ai/prompts/52_anti_library.md). Do not duplicate the prompt body here.
+Canonical prompt: [`ai/prompts/52_anti_library.md`](../../ai/prompts/52_anti_library.md). Load shared constraints: [`ai/prompts/_shared_constraints.md`](../../ai/prompts/_shared_constraints.md). Do not duplicate the prompt body here.
 
 
 ## Review Checklist

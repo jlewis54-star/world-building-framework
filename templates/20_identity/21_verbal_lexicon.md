@@ -71,7 +71,7 @@ High-frequency fillers that break character. Provide replacements.
 
 ## AI Prompt
 
-Canonical prompt: [`ai/prompts/21_verbal_lexicon.md`](../../ai/prompts/21_verbal_lexicon.md). Do not duplicate the prompt body here.
+Canonical prompt: [`ai/prompts/21_verbal_lexicon.md`](../../ai/prompts/21_verbal_lexicon.md). Load shared constraints: [`ai/prompts/_shared_constraints.md`](../../ai/prompts/_shared_constraints.md). Do not duplicate the prompt body here.
 
 
 ## Review Checklist

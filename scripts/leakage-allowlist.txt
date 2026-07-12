@@ -1,0 +1,6 @@
+# Allowlisted paths or substrings for check_ai_leakage.sh
+# One pattern per line. Matches if pattern appears in file path or matched line.
+
+writing-standard/CHANGELOG.md
+amazon-standards
+ai/VENDORED.md

@@ -32,7 +32,7 @@ Theory background: [`theory/Creative-World-Building-Research-Framework.md`](theo
 
 1. Fill thin stub `world/10_foundations/11_manifesto.md`: friction, founding myth, five beliefs, enemy.
 2. Fill thin stub `world/10_foundations/12_lore_canon.md`: architecture, reality rules, timeline skeleton, archetype stubs.
-3. Optional: run `ai/prompts/11_manifesto.md` then `ai/agents/canon-consistency.md` on drafts. Write into fill sections only.
+3. Optional: run `ai/prompts/11_manifesto.md` then post-draft agents from prompt frontmatter (`canon-consistency` for identity/lore docs). Load [`ai/prompts/_shared_constraints.md`](ai/prompts/_shared_constraints.md) with every prompt. Write into fill sections only.
 
 **Checkpoint**
 

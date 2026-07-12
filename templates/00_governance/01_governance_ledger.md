@@ -87,7 +87,7 @@ Docs intentionally not filled yet. Update when un-skipping for publish.
 
 ## AI Prompt
 
-Canonical prompt: [`ai/prompts/01_governance_ledger.md`](../../ai/prompts/01_governance_ledger.md). Do not duplicate the prompt body here.
+Canonical prompt: [`ai/prompts/01_governance_ledger.md`](../../ai/prompts/01_governance_ledger.md). Load shared constraints: [`ai/prompts/_shared_constraints.md`](../../ai/prompts/_shared_constraints.md). Do not duplicate the prompt body here.
 
 
 ## Review Checklist

@@ -1,0 +1,31 @@
+{
+  "skill": "low-ambiguity-notes",
+  "version": 1,
+  "evals": [
+    {
+      "id": "lore-critique-transcript",
+      "prompt": "Turn this creative review transcript into meeting notes: 'Lead said the dock religion feels too cute. Writer pushed back on timeline gap in act two. No decision on enemy name.'",
+      "expected_output": "Structured meeting note with filename first; no invented enemy name; action items only if source supports; promote_to hints if canon claims appear.",
+      "files": []
+    },
+    {
+      "id": "vendor-call-minimal",
+      "prompt": "Format these bullets as one atomic note: 'Foil stamp adds $2.40 per SKU. Vendor needs vector logo by Friday.'",
+      "expected_output": "Single atomic note; numerals preserved; no fabricated vendor name; definitive claims only.",
+      "files": []
+    },
+    {
+      "id": "research-atom",
+      "prompt": "Store this research excerpt as an atomic note for later mood vault: 'Harbor fog photography uses desaturated blues, not teal gradients.'",
+      "expected_output": "Kebab-case filename; source tag; promote_to mood vault or none; passes retrieval simulation.",
+      "files": []
+    },
+    {
+      "id": "edge-world-fill",
+      "prompt": "Fill world/12_lore_canon.md from this transcript.",
+      "expected_output": "Declines or routes to notes mode; does not write bible doc end-to-end without explicit promotion pass.",
+      "files": []
+    }
+  ],
+  "assertions_notes": "Grade against evals/quality-checks.md. Fail on fabricated metrics, names, or scaffold pasted into world/."
+}
