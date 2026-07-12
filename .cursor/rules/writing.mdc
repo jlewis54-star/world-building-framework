@@ -1,0 +1,16 @@
+---
+description: "Writing standard for this repo — writing-standard skill + WRITING.md self-check"
+alwaysApply: true
+---
+
+# Writing
+
+Draft all repo docs per `WRITING.md`.
+
+Prefer `ai/skills/writing-standard/SKILL.md`. Voice: `reference/voice.md` (skill points there via `references/voice.md`).
+
+When the skill is not loaded, enforce `WRITING.md` self-check before finishing any edit under `world/`, `templates/`, `playbook/`, `projects/`, `ai/` (non-skill), or root docs.
+
+Do not rewrite `theory/`. Do not match treatise prose when drafting canon.
+
+`world/` stays thin: frontmatter + fill sections only. Never paste Purpose, Theory, AI Prompt, or Review Checklist into `world/`. Never reset world by copying thick templates.

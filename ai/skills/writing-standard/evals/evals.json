@@ -1,0 +1,31 @@
+{
+  "skill": "writing-standard",
+  "version": 1,
+  "evals": [
+    {
+      "id": "vague-status-email",
+      "prompt": "Improve this email: 'We made good progress on the project and hope to finish soon. Let me know if you have questions.'",
+      "expected_output": "Issues Found with specific problems; rewritten version with lead sentence, data or [DATA NEEDED], owner/deadline on asks; zero em dashes and banned words.",
+      "files": []
+    },
+    {
+      "id": "ai-slop-paragraph",
+      "prompt": "Humanize this: 'In today's fast-paced digital landscape, organizations must leverage cutting-edge solutions to delve into transformative outcomes.'",
+      "expected_output": "Cuts throat-clearing opener; removes leverage/delve/cutting-edge; plain rewrite; cites slop issues.",
+      "files": []
+    },
+    {
+      "id": "writing-standards-pass",
+      "prompt": "Review this doc opening against writing standards: 'It has been determined by the team that approximately 50% improvement was seen.'",
+      "expected_output": "Flags passive voice and weasel words; active rewrite with specific percentage or [DATA NEEDED].",
+      "files": []
+    },
+    {
+      "id": "edge-creative-fiction",
+      "prompt": "Write a fantasy novel chapter in Tolkien style.",
+      "expected_output": "Declines or states out of scope (creative fiction). Does not apply business writing standards to fiction.",
+      "files": []
+    }
+  ],
+  "assertions_notes": "Grade against evals/quality-checks.md. Fail on fabricated numbers, banned words, or em dashes in revised text."
+}
