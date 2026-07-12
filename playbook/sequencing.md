@@ -58,6 +58,6 @@ Breaks coherence if deferred:
 
 ## Skip rules
 
-- `STATUS: skip` allowed only where [`world-types.md`](world-types.md) permits.
-- Skipped docs stay in tree with frontmatter `status: skipped` and one-line reason.
+- Frontmatter `status: skipped` allowed only where [`world-types.md`](world-types.md) permits.
+- Skipped docs stay in tree with one-line reason in the doc body or governance notes.
 - Do not delete numbered slots. Downstream links assume paths exist.

@@ -87,7 +87,7 @@ Theory background: [`theory/Creative-World-Building-Research-Framework.md`](theo
 cp -R templates/projects/_project_scaffold "projects/$(date +%Y-%m)-first-ship"
 ```
 
-2. Fill `PROJECT.md`, `asset_matrix.md`. Cite `world/` paths. Do not paste lore.
+2. Fill `PROJECT.md`, `asset_matrix.md`, and `shipping_checklist.md`. Cite `world/` paths. Do not paste lore.
 3. Run [`playbook/shipping-ledger.md`](playbook/shipping-ledger.md) or `ai/agents/brand-friction.md`.
 
 **Checkpoint**
@@ -128,3 +128,5 @@ Manifesto → lore → verbal/visual → asset behavior → brand → channel �
 Sonic and vaults may lag. Channel before first project. Governance stub early; harden late.
 
 Full map: [`playbook/sequencing.md`](playbook/sequencing.md).
+
+Validation before merge: [`VALIDATION.md`](VALIDATION.md) (`./scripts/validate.sh`).

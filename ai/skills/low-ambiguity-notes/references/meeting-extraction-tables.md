@@ -10,9 +10,9 @@ Load only when user asks for executive digest or table-heavy output. Default mee
 ## Sections (table-friendly)
 
 1. Meeting metadata (title, date, duration, attendees, type)
-2. Executive summary — 3 bullets: decided / changing / needs attention
+2. Executive summary: 3 bullets (decided / changing / needs attention)
 3. Decisions table: Decision | Rationale | Owner | Effective Date | Reversibility (flag irreversible / costly / easy)
-4. Action items table: # | Action | Owner | Due Date | Priority | Depends On — one owner each, concrete verb, P0/P1/P2
+4. Action items table: # | Action | Owner | Due Date | Priority | Depends On. One owner each, concrete verb, P0/P1/P2
 5. Open questions: Question | Resolver | By when | How
 6. Parking lot: Topic | Why deferred | Revisit when
 7. Risks: Risk | Raised by | Severity | Mitigation

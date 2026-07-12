@@ -11,7 +11,7 @@ Core procedure is tool-agnostic. Bindings below are optional per environment.
 ## This repo
 
 - Notes are not canon. Promotion path: [`playbook/notes-to-canon.md`](../../../../playbook/notes-to-canon.md).
-- Suggested scratch locations: private notes vault, branch, or chat export. Do not invent a second bible under `world/`.
+- Suggested scratch locations: [`examples/scratch/`](../../../../examples/scratch/), private notes vault, branch, or chat export. Do not invent a second bible under `world/`.
 - If promoting: name the target thin stub path (`world/...`) and leave `status: draft` for human sign-off.
 
 ## Obsidian (optional)

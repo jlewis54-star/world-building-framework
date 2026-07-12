@@ -22,7 +22,7 @@ One job: produce notes a future agent or teammate can retrieve with exactly one 
 
 ## Workspace fit
 
-This repo promotes notes into canon through [`playbook/notes-to-canon.md`](../../../../playbook/notes-to-canon.md). Notes are not canon. Do not write note output into `world/` unless the user explicitly starts a promotion pass and names the target doc.
+This repo promotes notes into canon through [`playbook/notes-to-canon.md`](../../../playbook/notes-to-canon.md). Notes are not canon. Do not write note output into `world/` unless the user explicitly starts a promotion pass and names the target doc.
 
 | Capture type | Typical next step |
 | --- | --- |
@@ -70,7 +70,7 @@ Stay inline for short calls, single atomic note, or format-only fix.
 
 - No aggressive summarization on meeting mode. Output length tracks input length.
 - No speaker attribution unless source requires it; follow meeting-notes-format rules.
-- No em dashes. Banned words per [`../../../../reference/voice.md`](../../../../reference/voice.md) plus meeting-notes forbidden list in reference.
+- No em dashes. Banned words per [`../../../reference/voice.md`](../../../reference/voice.md) plus meeting-notes forbidden list in reference.
 - Flag `[NO METRIC IN SOURCE]` or `[DATA NEEDED]` instead of inventing.
 - Never paste Purpose / Theory / AI Prompt / Review Checklist into notes as if they were canon.
 
@@ -80,4 +80,4 @@ Meeting notes: short sentences, lead with conclusion, numerals for all numbers.
 
 Atomic notes: definitive claims only; questions explicit, never soft claims.
 
-Agent chat with the user: Interaction voice from [`../../../../reference/voice.md`](../../../../reference/voice.md). Drafted note bodies: Drafting voice from the same file.
+Agent chat with the user: Interaction voice from [`../../../reference/voice.md`](../../../reference/voice.md). Drafted note bodies: Drafting voice from the same file.

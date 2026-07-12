@@ -2,7 +2,9 @@
 
 First-class generation and review helpers. Human owns canon. AI proposes. Checklists gate `signed_off`.
 
-Drafted output must follow [`../WRITING.md`](../WRITING.md). Prefer [`skills/writing-standard`](skills/writing-standard/SKILL.md).
+Drafted output must follow [`../WRITING.md`](../WRITING.md). Prefer [`skills/writing-standard`](skills/writing-standard/SKILL.md). Validate before merge: [`../VALIDATION.md`](../VALIDATION.md).
+
+Prompt ↔ world stub pairing: [`../world/README.md`](../world/README.md) (Doc triad table).
 
 ## Layout
 

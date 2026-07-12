@@ -29,13 +29,13 @@ Read Time: [word count / 250, rounded up] min
 
 ## Section order
 
-1. **What This Meeting Was About** — 2-3 sentences. Outcome first.
-2. **Decisions** — numbered. Conditions included. No speaker attribution.
-3. **Action Items** — bullet. Task in bold. Owner on second line only if clearly assigned. No TBD placeholders.
-4. **Key Numbers** — every metric, date, dollar, quantity. Bold the number.
-5. **What Was Discussed** — 3-7 topic subheadings. Full record; do not compress long transcripts.
-6. **Open Questions and Risks** — numbered with recommended next step.
-7. **Pre-Event Checklist** — checkbox list; only if meeting prepares a future event.
+1. **What This Meeting Was About**: 2-3 sentences. Outcome first.
+2. **Decisions**: numbered. Conditions included. No speaker attribution.
+3. **Action Items**: bullet. Task in bold. Owner on second line only if clearly assigned. No TBD placeholders.
+4. **Key Numbers**: every metric, date, dollar, quantity. Bold the number.
+5. **What Was Discussed**: 3-7 topic subheadings. Full record; do not compress long transcripts.
+6. **Open Questions and Risks**: numbered with recommended next step.
+7. **Pre-Event Checklist**: checkbox list; only if meeting prepares a future event.
 
 ## Writing rules
 
@@ -47,4 +47,4 @@ Read Time: [word count / 250, rounded up] min
 
 ## Forbidden language (meeting output)
 
-See source list: hedge words (however, furthermore, in conclusion...), slop (leverage, robust, seamless, stakeholder...), weak intensifiers (basically, very, significantly...), hype verbs (enhance, foster, streamline...). Retain only inside proper nouns or direct quotes.
+See [`reference/voice.md`](../../../../reference/voice.md) and meeting-notes slop categories in the skill reference. Retain flagged terms only inside proper nouns or direct quotes.

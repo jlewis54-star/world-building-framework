@@ -6,13 +6,19 @@ Covers fictional universes, brand worlds, creator IP, and tabletop settings. Sam
 
 Primary user: small creative team / studio ops. Tone: dense reference docs. See [`WRITING.md`](WRITING.md) (prefer [`ai/skills/writing-standard`](ai/skills/writing-standard/SKILL.md)).
 
+Validation: [`VALIDATION.md`](VALIDATION.md) (`./scripts/validate.sh`).
+
 ## Five-minute start
 
 1. Clone this repo.
 2. Read [`GETTING_STARTED.md`](GETTING_STARTED.md). Follow phases P0 through P5.
 3. Thin stubs already sit in `world/`. Replace `_fill_` sections. Do **not** copy thick `templates/` into `world/` to reset.
-4. Fill `world/10_foundations/11_manifesto.md` first. Everything else depends on it.
-5. After identity sign-off, copy `templates/projects/_project_scaffold/` to `projects/YYYY-MM-slug/`.
+4. **P0:** Set world profile in [`world/00_governance/01_governance_ledger.md`](world/00_governance/01_governance_ledger.md) (type, hard/soft dial, owners).
+5. **P1:** Fill [`world/10_foundations/11_manifesto.md`](world/10_foundations/11_manifesto.md) and [`world/10_foundations/12_lore_canon.md`](world/10_foundations/12_lore_canon.md).
+6. **P2 to P3:** Identity systems, then brand and channel docs.
+7. **P4:** Copy `templates/projects/_project_scaffold/` to `projects/YYYY-MM-slug/` (after P3, not after identity alone).
+
+Doc triad (stub, template, prompt): [`world/README.md`](world/README.md).
 
 ### Reset a world doc
 
@@ -30,9 +36,11 @@ AI workflows: [`AGENTS.md`](AGENTS.md) and [`ai/`](ai/).
 | `world/` | Thin filled bible. Frontmatter + fill sections only. Source of truth. |
 | `projects/` | Shipping outputs. Inherit from `world/`. Do not duplicate lore. |
 | `ai/` | Prompts, agents, vendored skills. |
+| `examples/` | Demo world and notes scratch (non-authoritative). |
 | `WRITING.md` | Writing standard entry point. |
 | `reference/voice.md` | Shared prose rules (interaction + drafting). |
 | `CONVENTIONS.md` | Naming, canon versioning, contribution, spinoffs. |
+| `VALIDATION.md` | Markdown validation before merge. |
 
 ## Reading track (new collaborators)
 

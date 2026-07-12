@@ -32,10 +32,11 @@ Studio bible register for `world/`, `templates/`, `playbook/`, `projects/`, `ai/
 | Writing | `WRITING.md` |
 | Process | `playbook/` |
 | Blank forms (thick) | `templates/` |
-| Filled bible (thin) | `world/` |
+| Filled bible (thin) | `world/` doc triad table in [`world/README.md`](world/README.md) |
 | Shipping instances | `projects/` |
 | Generation / review | `ai/prompts/`, `ai/agents/`, `ai/skills/` |
 | Theory cites | `theory/Creative-World-Building-Research-Framework.md` |
+| Validation | [`VALIDATION.md`](VALIDATION.md): run `./scripts/validate.sh` before merge |
 
 ## Agent kit
 

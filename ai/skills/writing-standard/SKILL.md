@@ -29,7 +29,7 @@ One job: turn vague, passive, or AI-sounding text into clear, direct, data-drive
 | `references/writing-standards.md` | Quick rewrite pass, email/doc review, clarity checklist |
 | `references/ai-slop-detection.md` | Text sounds LLM-generated, marketing-ish, or formulaic |
 | `references/writing-handbook.md` | Long memos, deep style rules, formatting, procedures, global English |
-| [`../../../../reference/voice.md`](../../../../reference/voice.md) | Every pass. Drafting voice is authority for tone, banned words, zero em dashes |
+| [`../../../reference/voice.md`](../../../reference/voice.md) | Every pass. Drafting voice is authority for tone, banned words, zero em dashes |
 
 Do not restate the banned-word list here. Load Drafting voice for repo docs and outbound copy. Load Interaction voice only when the output is a direct reply to the user rather than a draft into the repo.
 
@@ -42,11 +42,11 @@ Do not restate the banned-word list here. Load Drafting voice for repo docs and 
 | `projects/**` | Cite `world/` paths. No lore duplication. |
 | `playbook/**`, root docs | Procedure voice. Tables and numbered steps. |
 
-Also enforce root [`WRITING.md`](../../../../WRITING.md) self-check.
+Also enforce root [`WRITING.md`](../../../WRITING.md) self-check.
 
 ## Core principles (always apply)
 
-1. **Specific over vague:** numbers, paths, owners — not adjectives ("73% improvement", not "significant improvement").
+1. **Specific over vague:** numbers, paths, owners, not adjectives ("73% improvement", not "significant improvement").
 2. **Active voice:** subject does the action ("We completed", not "was completed by").
 3. **Pyramid structure:** conclusion first, evidence after.
 4. **No weasel words:** cut "very", "approximately", "we believe", "it seems"; replace with data or drop.
@@ -155,4 +155,4 @@ For quick "just fix it" requests, deliver **Full Revised Version** first, then a
 
 ## Voice
 
-See [`../../../../reference/voice.md`](../../../../reference/voice.md). Do not duplicate its rules here.
+See [`../../../reference/voice.md`](../../../reference/voice.md). Do not duplicate its rules here.

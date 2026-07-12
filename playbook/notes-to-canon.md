@@ -9,7 +9,7 @@ Notes are not canon. Canon is `world/` after human promotion.
 ## Flow
 
 1. Capture (transcript, call, research dump) → run `low-ambiguity-notes` (meeting or atomic mode).
-2. Land notes outside `world/` (local notes vault, `examples/` scratch, or a private branch). Do not invent a second bible.
+2. Land notes in [`examples/scratch/`](../examples/scratch/) (default), a local notes vault, or a private branch. Do not invent a second bible.
 3. Owner picks claims that change a world rule or fill a `_fill_` slot.
 4. Edit the matching thin `world/` doc. Frontmatter `status: draft`.
 5. Run `ai/agents/canon-consistency.md` (and brand-friction if public-facing).
