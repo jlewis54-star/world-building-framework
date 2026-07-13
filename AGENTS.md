@@ -41,3 +41,5 @@ Studio bible register for `world/`, `templates/`, `playbook/`, `projects/`, `ai/
 ## Agent kit
 
 When generating or reviewing world docs, load the matching prompt under `ai/prompts/` (link [`ai/prompts/_shared_constraints.md`](ai/prompts/_shared_constraints.md) first) and the relevant agent under `ai/agents/` (`canon-consistency`, `brand-friction`, `project-brief-expander`). For skill/agent authoring, use vendored `skill-authoring`, `instruction-refiner`, or `ai-engineer` per [`ai/README.md`](ai/README.md). Apply writing-standard to every drafted line. Write only into thin fill sections.
+
+GitHub / git ops (PRs, Dependabot, branch protection, pushes to `main`): load [`ai/skills/github-maintainer`](ai/skills/github-maintainer/SKILL.md). Decide safely when the maintainer cannot evaluate GitHub tradeoffs. Never merge conflicted PRs.
