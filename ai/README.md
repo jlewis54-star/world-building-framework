@@ -23,7 +23,7 @@ Vendored authoring toolchain provenance: [`VENDORED.md`](VENDORED.md).
 
 | Kind | Items |
 | --- | --- |
-| **Native (world kit)** | Prompts 01-52, `canon-consistency`, `brand-friction`, `project-brief-expander`, `writing-standard`, `low-ambiguity-notes` |
+| **Native (world kit)** | Prompts 01-52, `canon-consistency`, `brand-friction`, `project-brief-expander`, `writing-standard`, `low-ambiguity-notes`, `github-maintainer` |
 | **Vendored (authoring)** | `skill-authoring`, `ai-engineer`, `instruction-refiner`, `reference/context-engineering-principles.md` |
 
 ## Skills
@@ -32,6 +32,7 @@ Vendored authoring toolchain provenance: [`VENDORED.md`](VENDORED.md).
 | --- | --- |
 | [`writing-standard`](skills/writing-standard/SKILL.md) | Prose pass on any drafted doc; AI-slop removal; studio checklist |
 | [`low-ambiguity-notes`](skills/low-ambiguity-notes/SKILL.md) | Transcript/capture → notes; not for filling bible templates directly |
+| [`github-maintainer`](skills/github-maintainer/SKILL.md) | PRs, Dependabot, branch protection, push/merge decisions for this public repo |
 | [`skill-authoring`](skills/skill-authoring/SKILL.md) | New or improved SKILL.md; evals; structure review |
 
 ## Agents

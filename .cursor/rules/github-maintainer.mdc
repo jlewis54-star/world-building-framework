@@ -1,0 +1,11 @@
+---
+description: GitHub maintainer decisions for this public repo
+globs:
+alwaysApply: true
+---
+
+# GitHub / git ops
+
+When the user is unsure about GitHub, PRs, Dependabot, branch protection, force-push, collaborators, or pushes to `main`, load and follow [`ai/skills/github-maintainer/SKILL.md`](../../ai/skills/github-maintainer/SKILL.md) (Cursor mirror: `.cursor/skills/github-maintainer/SKILL.md`).
+
+Decide safely. Do not dump option menus. Never merge conflicted PRs. Default flow: branch → PR → `validate` green → squash merge.
