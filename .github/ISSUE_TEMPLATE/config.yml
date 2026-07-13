@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contributing guide
+    url: https://github.com/jlewis54-star/world-building-framework/blob/main/CONTRIBUTING.md
+    about: PR workflow, validation, and keeping world IP private
+  - name: Security policy
+    url: https://github.com/jlewis54-star/world-building-framework/blob/main/SECURITY.md
+    about: Report vulnerabilities privately

@@ -46,6 +46,10 @@ AI workflows: [`AGENTS.md`](AGENTS.md) and [`ai/`](ai/).
 | `reference/voice.md` | Shared prose rules (interaction + drafting). |
 | `CONVENTIONS.md` | Naming, canon versioning, contribution, spinoffs. |
 | `VALIDATION.md` | Markdown validation before merge. |
+| `CONTRIBUTING.md` | How to PR; keep your world IP private. |
+| `SECURITY.md` | Vulnerability reporting. |
+| `playbook/public-repo-governance.md` | GitHub Settings checklist for maintainers. |
+| `playbook/private-world-workflow.md` | Keep filled canon off public `main`. |
 
 ## Reading track (new collaborators)
 
@@ -61,3 +65,21 @@ Orientation lives here and in `GETTING_STARTED.md`. Not duplicated into each wor
 ## Golden rule
 
 Never create a new document if an edit to an existing one works. New docs only for distinct shipping outputs under `projects/`.
+
+## Clone, fork, or collaborator?
+
+Three ways people interact with this repo. Pick the right one before inviting a friend or accepting outside changes.
+
+| Method | What it is | Who uses it | Can they change this repo's `main`? |
+| --- | --- | --- | --- |
+| **Clone** | Copy to your machine (`git clone`). Work locally. | You, a friend learning the framework, anyone building a private world | Only if you gave them **Write** access (not recommended for beginners) |
+| **Fork** | Your own copy on GitHub, linked to upstream. | Open-source contributors, strangers | No. They push to **their** fork and open a **pull request** to you |
+| **Collaborator** | You invite their GitHub account in Settings → Collaborators. | Trusted friend with Write access | Yes, but only through a **PR** (branch protection). Force-push to `main` is blocked |
+
+**Recommended for a friend who does not know GitHub:** they **clone** (or duplicate into a **private repo** per [`playbook/private-world-workflow.md`](playbook/private-world-workflow.md)). Do **not** add them as Write collaborator on the public framework repo unless they need to merge framework changes.
+
+**Recommended for you (owner):** branch → PR → merge when `validate` CI is green. Same gate as everyone else. Keeps `main` stable for all cloners.
+
+**Strangers on the internet:** fork → PR. You review and merge. Fork PR workflows from first-time contributors require your approval before Actions run.
+
+Details: [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`playbook/public-repo-governance.md`](playbook/public-repo-governance.md).

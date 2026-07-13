@@ -8,6 +8,8 @@ Thin stubs already committed. Replace `_fill_` sections. Follow [`GETTING_STARTE
 
 Do **not** copy prose from [`examples/demo-world/`](../examples/demo-world/) (Harbor Line) into `world/`. Read the demo for fill density only.
 
+**Public repo:** Filled canon is IP. Keep real fills on a private fork; public `main` stays stub-only. See [`playbook/private-world-workflow.md`](../playbook/private-world-workflow.md).
+
 Do **not** copy thick `templates/` into `world/` to reset. Reset = restore the committed thin stub (`git checkout -- world/path/to/doc.md`).
 
 Generation: use [`ai/prompts/`](../ai/prompts/) or the prompt link on the matching template. Write results into these fill sections only. Do not paste Purpose, Theory, AI Prompt, or Review Checklist into `world/`.

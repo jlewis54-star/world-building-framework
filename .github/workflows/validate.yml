@@ -1,5 +1,7 @@
 name: Validate Markdown
 
+# Job id "validate" is required for branch protection. Do not rename this job.
+
 on:
   push:
     branches: [main]
@@ -11,8 +13,13 @@ on:
       - 'examples/**'
       - 'projects/**'
       - 'scripts/**'
+      - '.github/**'
+      - 'reference/**'
+      - 'theory/**'
+      - 'CODEOWNERS'
+      - '.gitignore'
       - 'Makefile'
-      - '*.md'
+      - '**/*.md'
   pull_request:
     paths:
       - 'world/**'
@@ -22,8 +29,20 @@ on:
       - 'examples/**'
       - 'projects/**'
       - 'scripts/**'
+      - '.github/**'
+      - 'reference/**'
+      - 'theory/**'
+      - 'CODEOWNERS'
+      - '.gitignore'
       - 'Makefile'
-      - '*.md'
+      - '**/*.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   validate:

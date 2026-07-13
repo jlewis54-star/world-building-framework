@@ -2,3 +2,16 @@
 *.swp
 *.swo
 *~
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Local Cursor config that may hold tokens
+.cursor/mcp.json
+
+# Instantiated shipping work (public reference: examples/demo-project/)
+projects/*
+!projects/README.md
