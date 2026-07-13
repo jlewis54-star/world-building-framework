@@ -1,13 +1,13 @@
 ---
 type: reference
 title: Voice
-description: Shared prose rules for this worldbuilding framework. Interaction voice = how agents talk to the user. Drafting voice = how agents write studio docs and outbound copy.
-timestamp: 2026-07-12
+description: Shared prose rules for this worldbuilding framework. Interaction voice = how agents talk to the user. Drafting voice = how agents write studio docs, playbook text, and team handoffs.
+timestamp: 2026-07-13
 ---
 
 # Voice
 
-Two scopes. Do not merge them: interaction voice governs how an agent talks to the user; drafting voice governs how an agent writes studio docs, playbook text, and outbound copy in this repo.
+Two scopes. Do not merge them: interaction voice governs how an agent talks to the user; drafting voice governs how an agent writes studio docs, playbook text, and team handoffs in this repo.
 
 ## Interaction voice (agent talking to the user)
 
@@ -39,48 +39,49 @@ Deliver accurate, dense, honest answers. Truth over agreement, conclusions over 
 - When no reasonable assumption resolves a question, state the ambiguity in one sentence and answer the 2 most likely interpretations.
 - Stop once the thesis is stated and supported. Do not continue past that point.
 
-## Drafting voice (studio docs and outbound copy)
+## Drafting voice (studio docs and team handoffs)
 
-Applies to anything drafted into this repo or sent as team/studio communication: `world/`, `playbook/`, `projects/`, `templates/` process text, partner emails, internal updates.
+Applies to anything drafted into this repo or sent as team communication: `world/`, `playbook/`, `projects/`, `templates/` process text, review notes, vendor handoffs, status updates.
 
-Direct, specific, technical when the topic earns it. Lead with the point; context after. Speak to the reader's problem first, capability second. No hedging when a clear recommendation exists.
+Direct, specific, technical when the topic earns it. Lead with the point; context after. Operational. Fail-able rules. No corporate mission fluff.
 
-Studio bible register: dense reference prose. Operational. Fail-able rules. No corporate mission fluff.
+Studio bible register: dense reference prose. A rule is good when a reviewer can fail an asset against it without asking the author what they meant.
 
-**Length by channel**
+**Length by doc type**
 
-| Channel | Max length | Format |
+| Doc type | Target | Format |
 | --- | --- | --- |
-| Outbound email (cold or first touch) | 100 words | Prose, 2-3 short paragraphs |
-| Follow-up email | 60 words | Prose or 3 bullets max |
-| Short message / DM | 50 words | One paragraph |
-| Call / critique notes | Bullets only | Outcome, next step, owner, date |
-| Internal updates | Bullets only | No prose paragraphs |
-| World / playbook docs | As needed | Tables and numbered steps preferred |
+| World fill section | Section only | Frontmatter + fill blocks; no scaffold paste |
+| Playbook / template procedure | ≤2000 words unless scope requires more | Numbered steps, tables |
+| Project brief | ≤500 words | Lead + constraints + `world/` cites |
+| Team email / handoff | ≤200 words | Prose or bullets; one decision or ask |
+| Status update | Bullets only | Outcome, next step, blocker, owner, date |
+| Review comment | ≤100 words | Quote the failing line; name the rule path |
 
 Word counts are ceilings, not targets.
 
-**Opening and closing**
+**Openings and structure**
 
-- Banned openers: "Hope you're well", "Just checking in", "Wanted to reach out", "I know you're busy".
-- Open with the recipient's specific situation, a relevant trigger, or a quantified observation. Name the company or person in the first sentence when relevant.
-- One specific ask per message, naming a time, person, or decision. No "let me know if you need anything else" filler.
-- Sign-off is the name only, or the team's configured signature block.
+- Banned openers: "Hope you're well", "Just checking in", "Wanted to reach out", "In this document we will", "As discussed".
+- Open with the decision, rule, gap, or recommendation. Name the path (`world/…`, `playbook/…`) in the first sentence when the doc lives in-repo.
+- When action is required, name owner and date in the same block as the ask. Do not bury the ask in context.
+- Cut throat-clearing intros, recap paragraphs, and sign-off filler ("let me know if you need anything else").
 
 **Internal updates**
 
 - Bullets only, no prose summaries. Order: outcome, next step, blocker (if any), owner, date.
 - Lead with what changed or was decided, not what was done.
-- Give options with tradeoffs when a decision is needed; do not decide for the recipient without flagging it.
+- Give options with tradeoffs when a decision is needed; flag when the author is deciding for the team without sign-off.
 - Flag blockers explicitly.
 
 **Quality check before send or merge**
 
 1. Does the first sentence carry the point?
-2. Word count under the channel ceiling when a channel applies?
+2. Word count under the doc-type ceiling when a type applies?
 3. Zero em dashes, zero banned words?
-4. Exactly one specific ask (for messages)?
-5. Every claim sourced, numbered, or cut?
+4. Action items have owner + date when present?
+5. Every claim names a path, owner, number, or gets cut?
+6. If target is `world/`: no Purpose, Theory, AI Prompt, or Review Checklist leaked in?
 
 ## Banned everywhere (both scopes)
 
