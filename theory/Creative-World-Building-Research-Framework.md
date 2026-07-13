@@ -525,8 +525,8 @@ A visual world fails to connect with an audience if it lacks an underlying narra
 
 ### Interactivity, Agency, and Ethical Responsibility
 
-In interactive spaces, such as video games, world-building is deeply linked with player agency.[^82] K. Yoland, an interdisciplinary artist who has collaborated with development teams such as ZA/UM on *Disco Elysium*, argues that world-building is not just about aesthetics, but about breaking down and reshaping inherited systems of reality.[^83]  
-In *Disco Elysium*, the creators wove complex post-Soviet political ideologies into the very geography and environment of the fictional city of Revachol.[^83] Yoland’s own site-specific project, *Operation Tumbleweed*, utilized surreal, absurd interventions along physical borders to spark dialogue about migration and exclusion.[^83]  
+In interactive spaces, such as video games, world-building is deeply linked with player agency.[^7] K. Yoland, an interdisciplinary artist who has collaborated with development teams such as ZA/UM on *Disco Elysium*, argues that world-building is not just about aesthetics, but about breaking down and reshaping inherited systems of reality.[^81]  
+In *Disco Elysium*, the creators wove complex post-Soviet political ideologies into the very geography and environment of the fictional city of Revachol.[^81] Yoland’s own site-specific project, *Operation Tumbleweed*, utilized surreal, absurd interventions along physical borders to spark dialogue about migration and exclusion.[^81]  
 To build believable worlds that respect human complexities, developers and brand strategists must prioritize ethical storytelling:
 
 ```text
@@ -806,16 +806,9 @@ Plaintext
 Building an identity system overnight causes operational friction. Construct the folder in four distinct steps.
 
 ```text
-Plaintext  
-```
-
-```text
-Phase 1: Foundations (Weeks 1-2)  ──\>  Phase 2: System Specs (Weeks 3-5)  
-                                                │  
-```
-
-```text
-Phase 4: Scale & Gov (Ongoing)    \<──  Phase 3: Outbound Playbooks (Weeks 6-8)
+Phase 1: Foundations (Weeks 1-2)  ──>  Phase 2: System Specs (Weeks 3-5)
+                                                │
+Phase 4: Scale & Gov (Ongoing)    <──  Phase 3: Outbound Playbooks (Weeks 6-8)
 ```
 
 
