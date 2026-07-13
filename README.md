@@ -68,18 +68,18 @@ Never create a new document if an edit to an existing one works. New docs only f
 
 ## Clone, fork, or collaborator?
 
-Three ways people interact with this repo. Pick the right one before inviting a friend or accepting outside changes.
+Three ways people interact with this repo. Pick the right one before inviting a collaborator or accepting outside changes.
 
 | Method | What it is | Who uses it | Can they change this repo's `main`? |
 | --- | --- | --- | --- |
-| **Clone** | Copy to your machine (`git clone`). Work locally. | You, a friend learning the framework, anyone building a private world | Only if you gave them **Write** access (not recommended for beginners) |
+| **Clone** | Copy to your machine (`git clone`). Work locally. | You, teammates, anyone building a private world | Only if you gave them **Write** access |
 | **Fork** | Your own copy on GitHub, linked to upstream. | Open-source contributors, strangers | No. They push to **their** fork and open a **pull request** to you |
-| **Collaborator** | You invite their GitHub account in Settings → Collaborators. | Trusted friend with Write access | Yes, but only through a **PR** (branch protection). Force-push to `main` is blocked |
+| **Collaborator** | You invite their GitHub account in Settings → Collaborators. | Teammate with Write access | Yes, but only through a **PR** (branch protection). Force-push to `main` is blocked |
 
-**Recommended for a friend who does not know GitHub:** they **clone** (or duplicate into a **private repo** per [`playbook/private-world-workflow.md`](playbook/private-world-workflow.md)). Do **not** add them as Write collaborator on the public framework repo unless they need to merge framework changes.
+**Recommended for most contributors:** **clone** (or duplicate into a **private repo** per [`playbook/private-world-workflow.md`](playbook/private-world-workflow.md)). Grant **Write** collaborator access only when someone needs to merge framework changes here.
 
-**Recommended for you (owner):** branch → PR → merge when `validate` CI is green. Same gate as everyone else. Keeps `main` stable for all cloners.
+**Recommended for maintainers:** branch → PR → merge when `validate` CI is green. Same gate as everyone else. Keeps `main` stable for all cloners.
 
-**Strangers on the internet:** fork → PR. You review and merge. Fork PR workflows from first-time contributors require your approval before Actions run.
+**Outside contributors:** fork → PR. Review and merge. Fork PR workflows from first-time contributors require approval before Actions run.
 
 Details: [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`playbook/public-repo-governance.md`](playbook/public-repo-governance.md).
